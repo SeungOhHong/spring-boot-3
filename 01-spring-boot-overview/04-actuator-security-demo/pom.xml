@@ -33,7 +33,10 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-		<!-- ADD SUPPORT FOR SPRING SECURITY -->
+		<!-- SPRING SECURITY를 위한 디펜던시이다. 보안관련 엔드포인트들이 열린다.
+		앱을 런하면 이제 보안 비밀번호가 생성된다.
+		유저네임 : user
+		비밀번호 : 복붙 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
