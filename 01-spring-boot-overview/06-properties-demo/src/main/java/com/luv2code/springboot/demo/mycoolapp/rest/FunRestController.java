@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FunRestController {
 
-    // inject properties for: coach.name and team.name
-
+    // application.properties에서 정의한 커스텀으로 만든 프로퍼티 주입하기: coach.name and team.name
+    // @Value("${정의한 프로퍼티명}")
     @Value("${coach.name}")
     private String coachName;
 
     @Value("${team.name}")
     private String teamName;
 
-    // expose new endpoint for "teaminfo"
+    // teaminfo 엔드포인트에서 프로퍼티 사용하기
 
     @GetMapping("/teaminfo")
     public String getTeamInfo() {
