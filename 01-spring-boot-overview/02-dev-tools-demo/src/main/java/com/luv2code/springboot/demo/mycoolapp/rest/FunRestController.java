@@ -13,18 +13,18 @@ public class FunRestController {
         return "Hello World!";
     }
 
-    // expose a new endpoint for "workout"
+    // 이제 "workout" 이라는 엔드포인트를 추가해보자. 앱을 자동으로 재실행시켜준다
 
     @GetMapping("/workout")
     public String getDailyWorkout() {
-        return "Run a hard 5k!";
+        return "오늘 5키로나 걸었다";
     }
 
     // expose a new endpoint for "fortune"
 
     @GetMapping("/fortune")
     public String getDailyFortune() {
-        return "Today is your lucky day.";
+        return "운이 좋은 날이군!";
     }
 
 }
