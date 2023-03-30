@@ -27,7 +27,7 @@
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 
-		<!-- ADD SUPPORT FOR SPRING BOOT ACTUATOR -->
+		<!-- 폼 파일에 SPRING BOOT ACTUATOR 디펜던시를 추가해준다-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
