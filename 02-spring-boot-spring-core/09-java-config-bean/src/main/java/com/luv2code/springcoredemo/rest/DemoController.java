@@ -13,6 +13,7 @@ public class DemoController {
     private Coach myCoach;
 
     @Autowired
+    // @Qualifier("aquatic") 에 커스텀 빈 아이디를 사용하였다
     public DemoController(@Qualifier("aquatic") Coach theCoach) {
         System.out.println("In constructor: " + getClass().getSimpleName());
         myCoach = theCoach;
