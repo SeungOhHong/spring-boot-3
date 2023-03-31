@@ -4,6 +4,7 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+// @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) 어노테이션을 이용하여 바꾸면 false 결과값을 반환할 것이다
 @Component
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class CricketCoach implements Coach {
