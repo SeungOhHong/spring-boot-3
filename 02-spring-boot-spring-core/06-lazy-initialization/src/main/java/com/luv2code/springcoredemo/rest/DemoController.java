@@ -17,7 +17,8 @@ public class DemoController {
         System.out.println("In constructor: " + getClass().getSimpleName());
         myCoach = theCoach;
     }
-
+    // 모든 빈들을 lazy 상태로 만들 경우 /dailyworkout 엔드포인트에 접근 했을 때
+    // DemoController의 인스턴스를 생성하고 cricketCoach에 인젝션한다
     @GetMapping("/dailyworkout")
     public String getDailyWorkout() {
         return myCoach.getDailyWorkout();
