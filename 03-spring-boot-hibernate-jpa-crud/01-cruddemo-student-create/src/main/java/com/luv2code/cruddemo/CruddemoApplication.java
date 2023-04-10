@@ -89,5 +89,18 @@ Reduce logging level. Set logging level to warn
 logging.level.root=warn
 * */
 
+/* JPA란 ?
+* 하이버네이트는 스프링 부트에서 기본적으로 JPA를 구현한다
+* JPA 하이버네이트이지만 줄여서 JPA라고 부른다
+*
+*
+*
+* */
 
-
+// 엔터티 클래스란?
+// @Entity 어노테이션을 사용한다
+/*
+* 만약 생성자를 선언하지 않았다면 자바가 알아서 no-arg 생성자 처리해준다
+* 하지만 선언했다면 따로 명시적으로 처리해주어야한다
+*
+* */

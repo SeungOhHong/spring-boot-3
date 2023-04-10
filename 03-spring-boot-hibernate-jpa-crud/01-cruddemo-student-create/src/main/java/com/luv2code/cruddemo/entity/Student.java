@@ -1,12 +1,12 @@
 package com.luv2code.cruddemo.entity;
 
 import jakarta.persistence.*;
-
+// 새로운 entity 패키지와 student 클래스를 생성해준다
 @Entity
 @Table(name="student")
 public class Student {
 
-    // define fields
+    // 필드 정의하기
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
@@ -21,7 +21,7 @@ public class Student {
     @Column(name="email")
     private String email;
 
-    // define constructors
+    // 생성자 정의하기
     public Student() {
 
     }
@@ -32,7 +32,7 @@ public class Student {
         this.email = email;
     }
 
-    // define getters/setters
+    // getters/setters 정의하기
 
     public int getId() {
         return id;
@@ -67,7 +67,7 @@ public class Student {
     }
 
 
-    // define toString() method
+    // toString() 메서스 정의하기 : 오른쪽 클릭 Generate -> toString()
 
     @Override
     public String toString() {
