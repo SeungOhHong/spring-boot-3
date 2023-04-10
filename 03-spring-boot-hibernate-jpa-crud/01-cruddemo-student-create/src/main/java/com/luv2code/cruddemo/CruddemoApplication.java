@@ -55,7 +55,23 @@ public class CruddemoApplication {
 	}
 }
 
+/* 하이버네이트란 ?
+* 자바 객체를 DB에 저장하기 위한 프레임워크이다*
+*	로우레벨의 SQL을 다룰 수 있다
+* JDBC 코드의 양을 줄일 수 있다
+*	ORM(객체-관계 맵핑)을 지원한다(Object-to-Relational Mapping) 객체
+*	ORM을 지원하기 때문에 자바 클래스와 DB 테이블 간의 맵핑을 정의하면 된다
+*
+*
+* */
 
+/* MySQL
+* CREATE USER 'springstudent'@'localhost' IDENTIFIED BY 'springstudent';
+*
+* id 가 springstudent 이고
+* 비밀번호가 springstudent 인 새로운 유저를 생성하였다
+* IDENTIFIED BY 위의 문자열이 비밀번호이다
+* */
 
 
 
