@@ -13,11 +13,13 @@ public class CruddemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CruddemoApplication.class, args);
 	}
-
+	
+	// 커맨드라인 어플리케이션 설치하기 -> 스프링 부트 프레임 워크에서 지원하다. 스프링 빈이 로드된 후에 실행된다
 	@Bean
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO) {
 
 		return runner -> {
+			// 자바 람바 표현식이다.
 			createStudent(studentDAO);
 
 			createMultipleStudents(studentDAO);
@@ -73,7 +75,19 @@ public class CruddemoApplication {
 * IDENTIFIED BY 위의 문자열이 비밀번호이다
 * */
 
+/*
+application.properties 파일에 JDBC 연결에 관한 info를 추가한다
+spring.datasource.url=jdbc:mysql://localhost:3306/student_tracker
+spring.datasource.username=springstudent
+spring.datasource.password=springstudent
 
+# Turn off the Spring Boot banner
+spring.main.banner-mode=off
+
+# 오류가 없으면 따로 로그를 생략해주는 코드이다
+Reduce logging level. Set logging level to warn
+logging.level.root=warn
+* */
 
 
 
